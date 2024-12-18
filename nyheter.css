@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    max-width: 95vw;
+    background-color: black;
+    margin: auto;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex-direction: column;  
+    background-image: url("./assets/B05I3860.jpg");
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale();
+    padding-block: 1.5rem;;
+}
+
+#kf-019-title {
+    min-width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Punk'snotdead";
+    font-size: 75px;
+    letter-spacing: 15px;
+    text-decoration: none;
+    }
+    nav {
+        min-width: 95vw;
+        display: flex;
+        position: sticky;
+        z-index: 1000;
+        top: 0;
+        justify-content: space-around;
+        padding-block: 1rem;
+        background-color: rgba(0, 0, 0, 0.507);
+    }
+
+    nav > a {
+        font-family: "Grunge";
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+    }
+    
+    nav > a:visited {
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+    }
+
+.nyheter {
+    background-image: url(assets/DSC09145.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.548);
+}
+
+ 
+main {
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: rgba(0, 0, 0, 0.34);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: inherit;
+    backdrop-filter: blur(3px);
+    font-family: "Roboto", sans-serif;;
+    text-align: center;
+}
+
+main > * {
+    max-width: 80vw;
+}
+
+
+.nyheter-title {
+    font-family: "TrashHand";
+    font-size: 2rem;
+    margin: auto;
+    display: flex;
+    padding-block: 2rem;
+}
+
+.nyheter-container {
+    display: flex;
+}
+
+.articles-container {
+    margin-inline: auto;
+    max-height: 35vh;
+    padding: 1rem;
+    display: flex;
+    max-width: 80vw;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);  
+    margin-block: 1rem;
+    border: solid 2px rgba(255, 255, 255, 0.395);
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.475);
+    text-align: justify;
+}
+
+.articles-container * {
+    margin-inline: 0.5rem;
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-img {
+    max-height: 180px;
+    max-width: 250px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.395);
+    border-radius: 12px;
+}
+::-webkit-scrollbar {
+    width: 14px; 
+    height: 14px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FF5733; 
+    border-radius: 10px; 
+    border: 3px solid #222; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #C70039; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #222;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #333; 
+}
+html {
+    scrollbar-width: thin; 
+    scrollbar-color: #FF5733 #222; 
+    scroll-behavior: smooth;
+}
+
+
+footer {
+    padding-block: 1rem;
+    min-width: 100vw;
+    max-width: 100vw;
+    font-family: "TrashHand";
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    max-width: 10vw;
+    filter: invert();
+}
+
+
+.homepage-social-media * {
+    max-height: 40px;
+    margin-inline: 0.2rem;
+}
+
+.button {
+    position: fixed; 
+    bottom: 20px; 
+    right: 25px; 
+    z-index: 1000; 
+    visibility: hidden; /* to hide the element initally */
+    opacity: 0; 
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
+}
+
+.button.show {
+    visibility: visible;  /* it shows the element when the property show starts */
+    opacity: 1; 
+    transition: opacity 0.5s ease, visibility 0s 0s;
+}
+
+.button > img {
+    max-width: 50px;
+    max-height: 50px;
+    filter: invert();
+}
