@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Anton&display=swap');
+
 @font-face {
     font-family: 'TrashHand';
     src: url('./assets/fonts/TrashHand.woff2') format('woff2'),
@@ -7,14 +8,15 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Punk'snotdead";
-    src: url('./assets/fonts//Punk_s_not_dead.woff2') format('woff2'),
-         url('./assets/fonts//Punk_s_not_dead.woff') format('woff');
+    src: url('./assets/fonts/Punk_s_not_dead.woff2') format('woff2'),
+         url('./assets/fonts/Punk_s_not_dead.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-  }
-  
+}
+
 body {
     max-width: 95vw;
     background-color: black;
@@ -42,7 +44,7 @@ header {
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: "Punk'snotdead";
+    font-family: "Punk'snotdead", sans-serif;
     font-size: 75px;
     letter-spacing: 15px;
     text-decoration: none;
@@ -86,11 +88,12 @@ nav {
 }
 
 nav > a {
-    font-family: "Grunge";
+    font-family: "Anton", sans-serif;
     text-decoration: none;
     color: white;
     font-size: 12px;
 }
+
 
 main {
     background-color: rgba(0, 0, 0, 0.34);
@@ -102,7 +105,7 @@ main {
     align-items: center;
     position: inherit;
     backdrop-filter: blur(3px);
-    font-family: "TrashHand";
+    font-family: "TrashHand", sans-serif;
     text-align: center;
     font-size: 1.8rem;
 }
@@ -118,21 +121,24 @@ main > * {
     box-shadow: 0px 0px 100px rgb(65, 60, 60);
 }
 
+
 footer {
     padding-block: 1rem;
     min-width: 100vw;
     max-width: 100vw;
-    font-family: "TrashHand";
+    font-family: "TrashHand", sans-serif;
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+/* Logo nel footer */
 #logo {
     max-width: 10vw;
     filter: invert();
 }
+
 
 .homepage-social-media * {
     max-height: 40px;
@@ -161,6 +167,7 @@ footer {
     filter: invert();
 }
 
+/* Stili per la scrollbar */
 ::-webkit-scrollbar {
     width: 14px;
     height: 14px;
@@ -190,4 +197,3 @@ html {
     scrollbar-color: #FF5733 #222;
     scroll-behavior: smooth;
 }
-
