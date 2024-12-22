@@ -7,55 +7,56 @@ body {
     margin: auto;
     color: white;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 header {
     padding-top: 2rem;
+    padding-bottom: 5rem;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     background-image: url("./assets/B05I3860.jpg");
-    background-position:top;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale();
-    padding-bottom: 5rem;
 }
 
 #kf-019-title {
-min-width: 95vw;
-display: flex;
-justify-content: center;
-align-items: center;
-color: white;
-font-family: "Punk'snotdead";
-font-size: 75px;
-letter-spacing: 15px;
-text-decoration: none;
+    min-width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Punk'snotdead";
+    font-size: 75px;
+    letter-spacing: 15px;
+    text-decoration: none;
 }
 
 .homepage, .homepage-part-2 {
     min-width: 95vw;
     min-height: 100vh;
-    background-image: url(assets/DSC06467.jpg);
     background-position: center;
     background-size: cover;
     border-bottom: 2px solid rgba(255, 255, 255, 0.548);
 }
 
-.homepage-part-2 {
-    filter: grayscale();
-}
-
-section {
-   width: 95vw;
-   height: 100vh;
+.homepage {
+    background-image: url(assets/DSC06467.jpg);
 }
 
 .homepage-part-2 {
     background-image: url("assets/DSC09786.jpg");
+    filter: grayscale();
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+section {
+    width: 95vw;
+    height: 100vh;
 }
 
 nav {
@@ -68,6 +69,13 @@ nav {
     padding-block: 0.5rem;
     margin-top: -3rem;
     background-color: rgba(0, 0, 0, 0.507);
+}
+
+nav > a {
+    font-family: "Grunge";
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
 }
 
 main {
@@ -87,17 +95,6 @@ main {
 
 main > * {
     max-width: 80vw;
-}
-nav > a {
-    font-family: "Grunge";
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-}
-
-nav > a:visited {
-    text-decoration: none;
-    color: white;
 }
 
 .homepage-video {
@@ -123,24 +120,24 @@ footer {
     filter: invert();
 }
 
-
 .homepage-social-media * {
     max-height: 40px;
     margin-inline: 0.2rem;
 }
+
 .button {
-    position: fixed; 
-    bottom: 20px; 
-    right: 25px; 
-    z-index: 1000; 
-    visibility: hidden; /* to hide the element initally */
-    opacity: 0; 
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 1000;
+    visibility: hidden; /* to hide the element initially */
+    opacity: 0;
     transition: opacity 0.5s ease, visibility 0s 0.5s;
 }
 
 .button.show {
-    visibility: visible;  /* it shows the element when the property show starts */
-    opacity: 1; 
+    visibility: visible; /* it shows the element when the property show starts */
+    opacity: 1;
     transition: opacity 0.5s ease, visibility 0s 0s;
 }
 
@@ -149,19 +146,20 @@ footer {
     max-height: 50px;
     filter: invert();
 }
+
 ::-webkit-scrollbar {
-    width: 14px; 
-    height: 14px; 
+    width: 14px;
+    height: 14px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #FF5733; 
-    border-radius: 10px; 
-    border: 3px solid #222; 
+    background-color: #FF5733;
+    border-radius: 10px;
+    border: 3px solid #222;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #C70039; 
+    background-color: #C70039;
 }
 
 ::-webkit-scrollbar-track {
@@ -170,11 +168,12 @@ footer {
 }
 
 ::-webkit-scrollbar-track-piece {
-    background-color: #333; 
+    background-color: #333;
 }
+
 html {
-    scrollbar-width: thin; 
-    scrollbar-color: #FF5733 #222; 
+    scrollbar-width: thin;
+    scrollbar-color: #FF5733 #222;
     scroll-behavior: smooth;
 }
 

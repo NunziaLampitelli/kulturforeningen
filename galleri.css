@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
@@ -13,7 +14,6 @@ body {
     margin: auto;
     color: white;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 header {
@@ -60,34 +60,9 @@ nav > a {
 nav > a:visited {
     text-decoration: none;
     color: white;
-    font-size: 10px;
 }
 
-.nyheter {
-    background-image: url(assets/DSC09145.jpg);
-    background-position: center;
-    background-size: cover;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.548);
-}
-
-main {
-    min-height: 100vh;
-    min-width: 100%;
-    background-color: rgba(0, 0, 0, 0.34);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: inherit;
-    backdrop-filter: blur(3px);
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-}
-
-main > * {
-    max-width: 80vw;
-}
-
-.nyheter-title {
+.galleri-title {
     font-family: "TrashHand";
     font-size: 2rem;
     margin: auto;
@@ -95,46 +70,86 @@ main > * {
     padding-block: 2rem;
 }
 
-.nyheter-container {
+.galleri-page {
     display: flex;
+    justify-content: center;
+    min-width: 95vw;
+    gap: 20px;
+    min-height: fit-content;
+    background-image: url(assets/Affisch_Ung\ Punk.png);
 }
 
-.articles-container {
-    margin-inline: auto;
-    max-height: 35vh;
-    padding: 1rem;
-    display: flex;
-    max-width: 80vw;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.1);  
-    margin-block: 1rem;
-    border: solid 2px rgba(255, 255, 255, 0.395);
-    border-radius: 12px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.475);
-    text-align: justify;
-}
-
-.articles-container * {
-    margin-inline: 0.5rem;
-}
-
-.article-content {
+main {
+    background-color: rgba(0, 0, 0, 0.34);
+    min-width: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    position: inherit;
+    backdrop-filter: blur(3px);
+    font-family: "Roboto", serif;
+    text-align: center;
+    font-size: 1rem;
 }
 
-.article-img {
-    max-height: 180px;
-    max-width: 250px;
-    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.395);
-    border-radius: 12px;
+main > * {
+    max-width: 80vw;
 }
 
+.galleri-container {
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.galleri-img {
+    width: 200px;
+    height: 200px;
+    border: solid 2px #ff58339d;
+    box-shadow: 0px 0px 5px #ff58337d;
+    margin: 2rem;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.galleri-img:hover {
+    transform: scale(1.05);
+}
+
+.galleri-img:first-child {
+    background-image: url(assets/B05I3305.jpg);
+}
+
+.galleri-img:nth-child(2) {
+    background-image: url(assets/DSC06143.jpg);
+}
+
+.galleri-img:nth-child(3) {
+    background-image: url(assets/DSC06391.jpg);
+}
+
+.galleri-img:nth-child(4) {
+    background-image: url(assets/DSC06457.jpg);
+}
+
+.galleri-img:nth-child(5) {
+    background-image: url(assets/DSC08554.jpg);
+}
+
+.galleri-img:nth-child(6) {
+    background-image: url(assets/DSC06467.jpg);
+}
+
+.galleri-img:nth-child(7) {
+    background-image: url(assets/DSC09786.jpg);
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar {
-    width: 14px; 
-    height: 14px; 
+    width: 14px;
+    height: 14px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -177,20 +192,27 @@ footer {
     margin-inline: 0.2rem;
 }
 
+section {
+    min-width: 95vw;
+    max-width: 95vw;
+    height: fit-content;
+    margin: auto;
+}
+
 .button {
-    position: fixed; 
-    bottom: 20px; 
-    right: 25px; 
-    z-index: 1000; 
-    visibility: hidden; /* to hide the element initially */
-    opacity: 0; 
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
     transition: opacity 0.5s ease, visibility 0s 0.5s;
 }
 
 .button.show {
-    visibility: visible;  /* it shows the element when the property show starts */
-    opacity: 1; 
-    transition: opacity 0.5s ease, visibility 0s 0s;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear, visibility 0s 0s;
 }
 
 .button > img {
@@ -198,3 +220,5 @@ footer {
     max-height: 50px;
     filter: invert();
 }
+
+

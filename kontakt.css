@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
     scroll-behavior: smooth;
-    scrollbar-width: thin; 
+    scrollbar-width: thin;
     scrollbar-color: #FF5733 #222;
 }
 
@@ -13,7 +14,6 @@ body {
     margin: auto;
     color: white;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 header {
@@ -57,16 +57,7 @@ nav > a {
     font-size: 12px;
 }
 
-nav > a:visited {
-    text-decoration: none;
-    color: white;
-    font-size: 10px;
-}
-
-.nyheter {
-    background-image: url(assets/DSC09145.jpg);
-    background-position: center;
-    background-size: cover;
+.kontakt {
     border-bottom: 2px solid rgba(255, 255, 255, 0.548);
 }
 
@@ -87,54 +78,129 @@ main > * {
     max-width: 80vw;
 }
 
-.nyheter-title {
+.kontakt-title {
     font-family: "TrashHand";
     font-size: 2rem;
     margin: auto;
     display: flex;
-    padding-block: 2rem;
+    margin-block: 2rem;
 }
 
-.nyheter-container {
+.kontakt-container {
     display: flex;
+    min-width: 100%;
+    justify-content: space-evenly;
 }
 
-.articles-container {
-    margin-inline: auto;
-    max-height: 35vh;
+.mail-img {
+    width: 100px;
+    height: 100px;
     padding: 1rem;
+    margin: 1rem;
+    border-radius: 100px;
+}
+
+.mail-address {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto";
+}
+
+.kontakt-content-first,
+.kontakt-content-second,
+.kontakt-content-third,
+.kontakt-content-fourth {
     display: flex;
-    max-width: 80vw;
-    justify-content: space-around;
+    flex-direction: column;
+}
+
+.kontakt-content-first > img {
+    background-color: #C70039;
+}
+
+.kontakt-content-second > img {
+    background-color: aqua;
+}
+
+.kontakt-content-third > img {
+    background-color: #FF5733;
+}
+
+.kontakt-content-fourth > img {
+    background-color: burlywood;
+}
+
+.kontakt-content,
+.social-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.1);  
-    margin-block: 1rem;
-    border: solid 2px rgba(255, 255, 255, 0.395);
-    border-radius: 12px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.475);
-    text-align: justify;
 }
 
-.articles-container * {
-    margin-inline: 0.5rem;
+.social-media-link {
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 20px;
+    margin: 1rem;
 }
 
-.article-content {
+.social-media {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%; /* same width for the articles */
 }
 
-.article-img {
-    max-height: 180px;
-    max-width: 250px;
-    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.395);
-    border-radius: 12px;
+.social-media > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 2px;
+    background-color: white;
+    border: 2px solid #FF5733;
 }
 
+.social-media > .social-media-link {
+    margin-top: 0.5rem; 
+}
+
+
+.kontakt-container,
+.social-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+
+.social-content {
+    flex: 1 1 20%; /* same width for every container */
+    margin: 1rem;
+}
+
+#ig {
+    background-image: linear-gradient(to right, #F58529, #D6006C, #8E2DE2, #4D00B2, #FDFC47);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+#yt {
+    color: #FF0033;
+}
+
+#fb {
+    color: #0866FF;
+}
+
+/* Scrollbar styles */
 ::-webkit-scrollbar {
-    width: 14px; 
-    height: 14px; 
+    width: 14px;
+    height: 14px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -178,18 +244,18 @@ footer {
 }
 
 .button {
-    position: fixed; 
-    bottom: 20px; 
-    right: 25px; 
-    z-index: 1000; 
-    visibility: hidden; /* to hide the element initially */
-    opacity: 0; 
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
     transition: opacity 0.5s ease, visibility 0s 0.5s;
 }
 
 .button.show {
-    visibility: visible;  /* it shows the element when the property show starts */
-    opacity: 1; 
+    visibility: visible;
+    opacity: 1;
     transition: opacity 0.5s ease, visibility 0s 0s;
 }
 

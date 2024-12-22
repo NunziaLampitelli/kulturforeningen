@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
     scroll-behavior: smooth;
-    scrollbar-width: thin; 
+    scrollbar-width: thin;
     scrollbar-color: #FF5733 #222;
 }
 
 body {
+    overflow-x: hidden;
+    margin: auto;
     max-width: 95vw;
     background-color: black;
-    margin: auto;
     color: white;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 header {
@@ -57,14 +57,8 @@ nav > a {
     font-size: 12px;
 }
 
-nav > a:visited {
-    text-decoration: none;
-    color: white;
-    font-size: 10px;
-}
-
-.nyheter {
-    background-image: url(assets/DSC09145.jpg);
+.omoss {
+    background-image: url(assets/hudson-hintze-vpxeE7s-my4-unsplash.jpg);
     background-position: center;
     background-size: cover;
     border-bottom: 2px solid rgba(255, 255, 255, 0.548);
@@ -87,16 +81,12 @@ main > * {
     max-width: 80vw;
 }
 
-.nyheter-title {
+.omoss-title {
     font-family: "TrashHand";
     font-size: 2rem;
     margin: auto;
     display: flex;
     padding-block: 2rem;
-}
-
-.nyheter-container {
-    display: flex;
 }
 
 .articles-container {
@@ -107,34 +97,40 @@ main > * {
     max-width: 80vw;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.1);  
+    background-color: rgba(0, 0, 0, 0.479);
     margin-block: 1rem;
     border: solid 2px rgba(255, 255, 255, 0.395);
     border-radius: 12px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.475);
-    text-align: justify;
+    text-align: center;
 }
 
 .articles-container * {
     margin-inline: 0.5rem;
 }
 
-.article-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .article-img {
-    max-height: 180px;
-    max-width: 250px;
+    width: 500px;
+    height: 380px;
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    background-repeat: no-repeat;
     box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.395);
     border-radius: 12px;
+    background-image: url(assets/MFP-gänget_Punkbilpose.png);
+    margin-block: 3rem;
+    transition: transform 0.5s ease;
 }
 
+.article-img:hover {
+    transform: scale(1.2);
+}
+
+/* Scrollbar styles */
 ::-webkit-scrollbar {
-    width: 14px; 
-    height: 14px; 
+    width: 14px;
+    height: 14px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -178,18 +174,18 @@ footer {
 }
 
 .button {
-    position: fixed; 
-    bottom: 20px; 
-    right: 25px; 
-    z-index: 1000; 
-    visibility: hidden; /* to hide the element initially */
-    opacity: 0; 
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
     transition: opacity 0.5s ease, visibility 0s 0.5s;
 }
 
 .button.show {
-    visibility: visible;  /* it shows the element when the property show starts */
-    opacity: 1; 
+    visibility: visible;
+    opacity: 1;
     transition: opacity 0.5s ease, visibility 0s 0s;
 }
 
