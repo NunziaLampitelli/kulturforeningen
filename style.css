@@ -123,8 +123,8 @@ main > * {
     max-width: 80vw;
 }
 
-.homepage-video {
-    max-height: 60%;
+iframe.homepage-video {
+    min-height: 80%;
     max-width: auto;
     border-radius: 8px;
     box-shadow: 0px 0px 100px rgb(65, 60, 60);
@@ -141,7 +141,6 @@ footer {
     align-items: center;
 }
 
-/* Logo nel footer */
 #logo {
     max-width: 10vw;
     filter: invert();
@@ -174,7 +173,6 @@ footer {
     filter: invert();
 }
 
-/* Stili per la scrollbar */
 ::-webkit-scrollbar {
     width: 14px;
     height: 14px;
