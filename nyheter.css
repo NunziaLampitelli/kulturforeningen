@@ -1,5 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Anton&display=swap');
+
+@font-face {
+    font-family: 'TrashHand';
+    src: url('./assets/fonts/TrashHand.woff2') format('woff2'),
+         url('./assets/fonts/TrashHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Punk'snotdead";
+    src: url('./assets/fonts/Punk_s_not_dead.woff2') format('woff2'),
+         url('./assets/fonts/Punk_s_not_dead.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Grunge";
+    src: url('./assets/fonts/GRUNGE.woff2') format('woff2'),
+         url('./assets/fonts/GRUNGE.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 html {
     scroll-behavior: smooth;
