@@ -17,6 +17,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Grunge";
+    src: url('./assets/fonts/GRUNGE.woff2') format('woff2'),
+         url('assets/fonts/GRUNGE.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+}
+
 body {
     max-width: 95vw;
     background-color: black;
