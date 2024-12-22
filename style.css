@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
-
+@font-face {
+    font-family: 'TrashHand';
+    src: url('./assets/fonts/TrashHand.woff2') format('woff2'),
+         url('./assets/fonts/TrashHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Punk'snotdead";
+    src: url('./assets/fonts//Punk_s_not_dead.woff2') format('woff2'),
+         url('./assets/fonts//Punk_s_not_dead.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
 body {
     max-width: 95vw;
     background-color: black;
